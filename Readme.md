@@ -499,7 +499,7 @@ FTPTest.passiveMode=true
     static long	usedMemory()
     已使用的物理内存
 
-#valid相关的工具类
+#CheckUtil相关的工具类
 ##常量方法
     static boolean	isValid(Collection col)
     判断集合的有效性
@@ -542,3 +542,16 @@ FTPTest.passiveMode=true
     逐行处理文件内容
     static <E> void  processWithLine(File file,String encoding, Collection<E> result, ObjectProcess<String,E> process)
     逐行处理文件内容
+
+# ASEUtil
+##静态方法
+    static String encrypt(String secretKey, String Str)
+    使用ASE加密字符串（返回纯16进制字符串）
+    static String decode(String secretKey, String str)
+    使用ASE解密字符串（解密纯16进制字符串）
+# Blowfish
+## 静态方法
+    static byte[] encrypt(String key,String str)
+    使用Blowfish加密算法加密字符串
+    static String decrypt(String key,byte[] tt)
+    使用Blowfish加密算法解密字符串
