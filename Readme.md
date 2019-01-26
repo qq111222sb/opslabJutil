@@ -7,7 +7,7 @@
 ---
 #开发环境
     Win7x64 && ubuntu14 && MacOS
-    JDK1.7
+    JDK1.8
     IDEA14
 
 
@@ -15,35 +15,21 @@
 ```xml
 <dependency>
     <groupId>com.0opslab</groupId>
-    <artifactId>0opslab-utils</artifactId>
-    <version>1.0.0</version>
-</dependency>
-
-<!--1.0.2-->
-<dependency>
-    <groupId>com.0opslab</groupId>
-    <artifactId>0opslab-utils</artifactId>
-    <version>1.0.2</version>
-</dependency>
-
-
-<!--1.0.4-->
-<dependency>
-    <groupId>com.0opslab</groupId>
-    <artifactId>0opslab-utils</artifactId>
-    <version>1.0.4</version>
-</dependency>
-
-
-<!--1.0.6-->
-<dependency>
-    <groupId>com.0opslab</groupId>
-    <artifactId>0opslab-utils</artifactId>
-    <version>1.0.6</version>
+    <artifactId>opslabJutil</artifactId>
+    <version>1.0.8</version>
 </dependency>
 
 <!--后续版本-->
-由于上传maven中心比较慢，相当浪费时间，因此后续版本不在上传的maven中心，使用下载后直接build即可！
+<!-- 由于上传maven中心比较慢，相当浪费时间，因此后续版本不在上传的maven中心，可以像如下方式使用 -->
+<!-- Since uploading the maven center is slow and time consuming, the subsequent 
+       version is not in the uploaded maven center and can be used as follows -->
+<dependency>
+    <groupId>com.0opslab</groupId>
+    <artifactId>opslabJutil</artifactId>
+    <version>2.0.2</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/libs/opslabJutil-2.0.2.jar</systemPath>
+</dependency>
 ```
 
 ## config
