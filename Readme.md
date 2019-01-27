@@ -32,35 +32,15 @@
 </dependency>
 ```
 
+
+
+## 下一步计划
+* 加入WEB开发中常用的代码,如HTTP的安全校验,HTTP请求信的过滤,已经HTTP的请求的性能分析等工作。
+* 安全校验
+* 代码优化
+
 ## config
 如果需要修改默认配置可以通过在classpath下添加0opslab.properties文件来进行一些配置
-
-```java
-#主机特征四位的十六进制特征码
-HOST_FEATURE=0001
-DATETIME_FORMAT=yyyy-MM-dd HH:mm:ss
-DATE_FORMAT=yyyy-MM-dd
-TIME_FORMAT=HH:mm:ss
-
-#email信息配置
-mail.smtp.host=smtp.qq.com
-mail.smtp.port=25
-mail.smtp.auth=true
-mail.sender.username=438558488@qq.com
-mail.sender.password=****
-
-#FTP信息配置
-FTPTest.host=135.224.9.67
-FTPTest.port=21
-FTPTest.username=ftptest
-FTPTest.password=ftptest
-FTPTest.remoteDir=./test
-FTPTest.localDir=c:/download
-FTPTest.Encoding=gbk
-FTPTest.passiveMode=true
-```
-
-
 
 #API
 ---
